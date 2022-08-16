@@ -24,14 +24,14 @@ int main() {
     string n = intro();
     Player player = Player(n, 100, 50, 40);
     GameCharacter skeleton = GameCharacter("Skeleton", 75, 60, 20);
-    GameCharacter  pluto = GameCharacter("demon", 100, 75, 70);
+    GameCharacter  demon = GameCharacter("demon", 100, 75, 70);
     Item gladius = Item("Gladius", 0, 10, 0);
     Item potion = Item("strange serum.", 75, 15, 25);
     // vector groups to hand into the rooms
     vector<Item> g = {gladius};
     vector<Item> p = {potion};
     vector<GameCharacter> e1 = {skeleton};
-    vector<GameCharacter> e2 = {pluto};
+    vector<GameCharacter> e2 = {demon};
 
     // make rooms
     Dungeon dungeon = Dungeon(player);
